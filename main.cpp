@@ -6,7 +6,6 @@ using namespace std;
 const int MAX = 30;
 int student[MAX];
 string name[MAX];
-//char letterGrade[] = { A, B, C, D, F};
 int count = 0;
 int studentNumber;
 
@@ -20,7 +19,6 @@ void menu(){
     cout << "      z) End Program" << endl;
     cout << "**********************************" << endl;
 
-    
 }
 
 void addStudent(int x){
