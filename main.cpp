@@ -53,9 +53,14 @@ int main(){
             break;
             case 'b':
             case 'B':
-                cout << "Which student? (Enter student number)";
+                cout << "Which student? (Enter student number 1-30): ";
                 cin >> studentNumber;
-                setGrade(student[studentNumber - 1]);
+                if (studentNumber > MAX){
+                    cout << "Please enter <= 30 (max students)" << endl;
+                }else{
+                    setGrade(student[studentNumber - 1]);
+                }
+                
             break;
             case 'c':
             case 'C':
